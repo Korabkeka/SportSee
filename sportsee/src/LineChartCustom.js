@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceArea } from 'recharts';
+
+import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer} from 'recharts';
 
 function LineChartCustom(props){
 
@@ -10,7 +10,7 @@ function LineChartCustom(props){
         values.push(element.sessionLength)
       });
       let total = values.reduce((prev, current)=>prev+current, 0);
-      let _average = Math.round(total/7);
+      //let _average = Math.round(total/7);
 
     return(
         <>
