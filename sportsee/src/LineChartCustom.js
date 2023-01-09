@@ -12,7 +12,7 @@ function LineChartCustom(props){
         <LineChart
           width={258}
           height={263}
-          data={data.sessions}
+          data={data}
           style={{background:"red"}}
         >
           <XAxis dataKey="day" axisLine={false} tick={{stroke: "#fff", textAnchor:"middle"}} tickLine={false} tickMargin={-5} padding={{left:10, right:10}} />

@@ -4,7 +4,7 @@ function RadarChartCustom({data}){
     
     return(
         <div className='radar_custom'>
-        <RadarChart outerRadius="60%" width={258} height={263} data={data.data}>
+        <RadarChart outerRadius="60%" width={258} height={263} data={data}>
             <PolarGrid stroke='#fff' />
             <PolarAngleAxis dataKey="kind" axisLine={false} tick={{fill: "#fff", fontSize:"12px"}} />
             <PolarRadiusAxis axisLine={false} tick={{fill: "transparent"}} />
