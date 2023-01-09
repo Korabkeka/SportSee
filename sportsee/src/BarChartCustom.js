@@ -21,7 +21,7 @@ function BarChartCustom(props){
           <XAxis dataKey="day" tickLine={false} />
           <YAxis orientation='right' minTickGap={50} axisLine={false} tickLine={false} />
           <Tooltip />
-          <Legend verticalAlign='top' align='right' iconType={'circle'} iconSize={10} wrapperStyle={{top:0, display:"flex", justifyContent:"space-evenly"}} margin={{right:20}}/>
+          <Legend verticalAlign='top' align='right' iconType={'circle'} iconSize={10} wrapperStyle={{top:0, display:"flex", justifyContent:"right"}} margin={{right:20}}/>
           <Bar dataKey="kilogram" fill="#282D30" barSize={7} radius={[10, 10, 0, 0]} />
           <Bar dataKey="calories" fill="#E60000" barSize={7} radius={[10, 10, 0, 0]} />
         </BarChart>
