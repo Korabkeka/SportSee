@@ -1,32 +1,26 @@
 
-import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer} from 'recharts';
+import { LineChart, Line, XAxis, Tooltip, YAxis} from 'recharts';
+import "./LineChartCustom.css";
 
 function LineChartCustom(props){
 
     const {data} = props;
-  
-      let values = [];
-      data.sessions.forEach(element => {
-        values.push(element.sessionLength)
-      });
-      let total = values.reduce((prev, current)=>prev+current, 0);
-      //let _average = Math.round(total/7);
 
     return(
-        <>
-        <ResponsiveContainer width="100%" height={300} >
+        <div className='line_custom'>
+        <p className='line_custom_title'>Durée moyenne des sessions</p>
         <LineChart
-          width={500}
-          height={300}
+          width={258}
+          height={263}
           data={data.sessions}
           style={{background:"red"}}
         >
-          <XAxis dataKey="day" />
+          <XAxis dataKey="day" axisLine={false} tick={{stroke: "#fff", textAnchor:"middle"}} tickLine={false} tickMargin={-5} padding={{left:10, right:10}} />
+          <YAxis dataKey="sessionLength" domain={["dataMin - 10", "dataMax + 20"]} hide={true}/>
           <Tooltip />
-          <Line type="monotone" dataKey="sessionLength" stroke="#8884d8" dot={false}/>
+          <Line type="natural" dataKey="sessionLength" stroke="#fff" activeDot={false} dot={false}/>
         </LineChart>
-        </ResponsiveContainer>
-        </>
+        </div>
     )
 }
 

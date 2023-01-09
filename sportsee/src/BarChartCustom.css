@@ -1,0 +1,17 @@
+.bar_custom{
+    position: relative;
+    display: flex;
+    width: 835px;
+    height: 320px;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    align-items: center;
+    justify-content: center;
+}
+.bar_custom_title{
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    left: 20px;
+    top: 20px;
+}

@@ -1,0 +1,17 @@
+.line_custom{
+    position: relative;
+    display: flex;
+    border-radius: 5px;
+    width: 258px;
+    height: 263px;
+    overflow: hidden;
+}
+.line_custom_title{
+    position: absolute;
+    color: white;
+    top: 10px;
+    left: 25px;
+    z-index: 2;
+    width: 60%;
+    opacity: 0.5;
+}

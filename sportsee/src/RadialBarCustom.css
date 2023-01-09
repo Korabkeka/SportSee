@@ -1,0 +1,20 @@
+
+#root > div > div.recharts-wrapper > svg > g > g.recharts-layer.recharts-radial-bar-background > path:nth-child(1){
+    fill: #FBFBFB;
+}
+.radial_custom{
+    position: relative;
+    width: 258px;
+    height: 263px;
+    background-color: #FBFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.radial_custom_title{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-weight: bold;
+}
